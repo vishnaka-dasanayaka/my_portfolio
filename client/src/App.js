@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-gradient-to-br from-bg_gray_left to-bg_gray_right">
+    <div className="">
       <BrowserRouter>
         <Header />
         <Routes>

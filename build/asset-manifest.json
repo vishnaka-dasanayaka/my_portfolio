@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.3d6d1f98.css",
+    "main.js": "/my_portfolio/static/js/main.e7b3987c.js",
+    "static/media/me.png": "/my_portfolio/static/media/me.3b1aa7f5812771deb1ce.png",
+    "static/media/fs.jpg": "/my_portfolio/static/media/fs.41956fd15fa48466f56c.jpg",
+    "static/media/fe.jpg": "/my_portfolio/static/media/fe.0d839a5acbd31eddfd9b.jpg",
+    "static/media/bg_3.png": "/my_portfolio/static/media/bg_3.8f42952911907b0dfa67.png",
+    "static/media/be.jpg": "/my_portfolio/static/media/be.fff52a90cd630c7ec02b.jpg",
+    "static/media/name.png": "/my_portfolio/static/media/name.968c108c4c2b89a8dd25.png",
+    "static/media/hifigod.jpeg": "/my_portfolio/static/media/hifigod.3ff1fb7a0d4a5395d9c2.jpeg",
+    "static/media/fiver.png": "/my_portfolio/static/media/fiver.e30062d7d820e0d6cc66.png",
+    "static/media/lightway.svg": "/my_portfolio/static/media/lightway.ce739d425cf870130ff8933da720f3ff.svg",
+    "index.html": "/my_portfolio/index.html",
+    "main.3d6d1f98.css.map": "/my_portfolio/static/css/main.3d6d1f98.css.map",
+    "main.e7b3987c.js.map": "/my_portfolio/static/js/main.e7b3987c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d6d1f98.css",
+    "static/js/main.e7b3987c.js"
+  ]
+}

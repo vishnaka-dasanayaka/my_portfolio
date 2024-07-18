@@ -1,6 +1,4 @@
 {
-  "homepage": "https://vishnaka-dasanayaka.github.io/my_portfolio"
-,
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,7 +45,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "tailwindcss": "^3.4.4",
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.5"
+    "tailwindcss": "^3.4.4"
   }
 }

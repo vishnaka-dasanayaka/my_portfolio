@@ -4,9 +4,9 @@ import fs from "../../assets/img/fs.jpg";
 function Services() {
   return (
     <div id="services" className="w-screen h-auto py-10 bg-gray-100">
-      <div className="flex items-start justify-between mx-32">
-        <div className="flex flex-col items-start justify-start w-1/2 h-auto py-5 pr-20">
-          <h1 className="text-3xl font-extrabold capitalize">
+      <div className="flex flex-col items-start justify-between mx-5 lg:mx-32 lg:flex-row">
+        <div className="flex flex-col items-start justify-start w-full h-auto py-5 lg:pr-20 lg:w-1/2">
+          <h1 className="text-3xl font-extrabold capitalize ">
             what do i provide?
           </h1>
           <p className="mt-10">
@@ -23,9 +23,9 @@ function Services() {
             ea, fugiat error?
           </p>
         </div>
-        <div className="flex flex-col items-start justify-start w-1/2 h-auto py-5 ">
+        <div className="flex flex-col items-start justify-start w-full h-auto py-5 lg:w-1/2 ">
           <div className="flex items-center justify-start w-full h-auto p-3 mb-5 bg-white rounded-lg">
-            <div className="w-1/5 h-20 rounded-full">
+            <div className="hidden h-20 rounded-full lg:blockw-1/5">
               <img
                 src={fe}
                 className="object-cover w-20 h-20 bg-blue-100 rounded-full"
@@ -48,7 +48,7 @@ function Services() {
           </div>
 
           <div className="flex items-center justify-start w-full h-auto p-3 mb-5 bg-white rounded-lg">
-            <div className="w-1/5 h-20 rounded-full">
+            <div className="hidden w-1/5 h-20 rounded-full lg:block">
               <img
                 src={be}
                 className="object-cover w-20 h-20 bg-blue-100 rounded-full"
@@ -71,7 +71,7 @@ function Services() {
           </div>
 
           <div className="flex items-center justify-start w-full h-auto p-3 mb-5 bg-white rounded-lg">
-            <div className="w-1/5 h-20 rounded-full">
+            <div className="hidden w-1/5 h-20 rounded-full lg:block">
               <img
                 src={fs}
                 className="object-cover w-20 h-20 bg-blue-100 rounded-full"

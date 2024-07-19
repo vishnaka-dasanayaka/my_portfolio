@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d6d1f98.css",
-    "main.js": "/static/js/main.3c803b74.js",
+    "main.css": "/static/css/main.37a1281e.css",
+    "main.js": "/static/js/main.91415e48.js",
     "static/media/me.png": "/static/media/me.3b1aa7f5812771deb1ce.png",
     "static/media/fs.jpg": "/static/media/fs.41956fd15fa48466f56c.jpg",
     "static/media/fe.jpg": "/static/media/fe.0d839a5acbd31eddfd9b.jpg",
     "static/media/bg_3.png": "/static/media/bg_3.8f42952911907b0dfa67.png",
     "static/media/be.jpg": "/static/media/be.fff52a90cd630c7ec02b.jpg",
+    "static/media/leet.png": "/static/media/leet.d500bb7c08811162a15d.png",
     "static/media/name.png": "/static/media/name.968c108c4c2b89a8dd25.png",
+    "static/media/gmail.webp": "/static/media/gmail.ba7616d4e7de36f4d562.webp",
+    "static/media/phone.png": "/static/media/phone.b85b9d74c54fc2ba724a.png",
+    "static/media/cv.jpg": "/static/media/cv.7a3bcc42a56376aed96e.jpg",
     "static/media/hifigod.jpeg": "/static/media/hifigod.3ff1fb7a0d4a5395d9c2.jpeg",
     "static/media/fiver.png": "/static/media/fiver.e30062d7d820e0d6cc66.png",
     "static/media/lightway.svg": "/static/media/lightway.ce739d425cf870130ff8933da720f3ff.svg",
+    "static/media/linkedin.webp": "/static/media/linkedin.4c11b4693dd4eebca5be.webp",
     "index.html": "/index.html",
-    "main.3d6d1f98.css.map": "/static/css/main.3d6d1f98.css.map",
-    "main.3c803b74.js.map": "/static/js/main.3c803b74.js.map"
+    "main.37a1281e.css.map": "/static/css/main.37a1281e.css.map",
+    "main.91415e48.js.map": "/static/js/main.91415e48.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d6d1f98.css",
-    "static/js/main.3c803b74.js"
+    "static/css/main.37a1281e.css",
+    "static/js/main.91415e48.js"
   ]
 }

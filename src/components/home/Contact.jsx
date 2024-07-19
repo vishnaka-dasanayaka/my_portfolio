@@ -1,15 +1,22 @@
-import fe from "../../assets/img/fe.jpg";
+import fe from "../../assets/img/cv.jpg";
+import phone from "../../assets/img/phone.png";
+import gmail from "../../assets/img/gmail.webp";
+import linkedin from "../../assets/img/linkedin.webp";
+import hackerrank from "../../assets/img/hackerrank.png";
+import leet from "../../assets/img/leet.png";
+import fiverrlogo from "../../assets/img/fiverrlogo.png";
+import git from "../../assets/img/git.png";
 
 function Contact() {
   return (
     <div id="contact" className="w-screen h-auto py-10 bg-white">
-      <div className="mx-32">
+      <div className="mx-5 lg:mx-32">
         <h1 className="text-3xl font-extrabold capitalize ">get in touch</h1>
-        <div className="flex items-start justify-between mt-10">
+        <div className="flex flex-col items-start justify-between mt-10 lg:flex-row">
           <div className="flex flex-col items-start justify-start mr-3">
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={phone}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
@@ -18,7 +25,7 @@ function Contact() {
 
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={gmail}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
@@ -29,7 +36,7 @@ function Contact() {
 
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={linkedin}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
@@ -40,7 +47,7 @@ function Contact() {
 
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={fiverrlogo}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
@@ -50,7 +57,7 @@ function Contact() {
           <div className="flex flex-col items-start justify-start mr-3">
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={hackerrank}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
@@ -59,13 +66,22 @@ function Contact() {
 
             <div className="flex items-center justify-start mb-5">
               <img
-                src={fe}
+                src={leet}
                 className="object-cover w-10 h-10 rounded-full"
                 alt=""
               />
               <h1 className="ml-3 font-extrabold ">
                 vishnaka-dasanayaka leet{" "}
               </h1>
+            </div>
+
+            <div className="flex items-center justify-start mb-5">
+              <img
+                src={git}
+                className="object-cover w-10 h-10 rounded-full"
+                alt=""
+              />
+              <h1 className="ml-3 font-extrabold ">vishnaka-dasanayaka</h1>
             </div>
 
             <div className="flex items-center justify-start mb-5">
@@ -78,18 +94,9 @@ function Contact() {
                 vishnaka-dasanayaka fiverr
               </h1>
             </div>
-
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={fe}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">vishnaka-dasanayaka</h1>
-            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-between w-1/3">
+          <div className="flex flex-col items-center justify-between w-full mb-10 lg:mb-0 lg:w-1/3">
             <h1 className="text-lg font-extrabold text-black ">
               Send a Message
             </h1>

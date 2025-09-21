@@ -1,50 +1,55 @@
 import React from "react";
 import name from "../assets/img/name.png";
-import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
+  const navItems = [
+    { label: "Services", link: "#services" },
+    { label: "Works", link: "#works" },
+    { label: "Experience", link: "#experience" },
+    { label: "Blogs", link: "./blogs" },
+    { label: "Contact", link: "#contact" },
+  ];
+
   return (
-    <div className="">
-      <div className=" fixed z-20 bg-white flex text-[rgb(83,83,83)] w-full  items-center justify-between h-16 px-5 lg:px-10  py-5 ">
-        <a href="./#home">
-          <div className="flex justify-start w-1/2 h-full lg:w-1/3">
-            <img
-              src={name}
-              className="h-full cursor-pointer hover:scale-105 "
-              alt="name"
-            />
-          </div>
+    <header className="fixed top-0 left-0 z-50 w-full bg-[#0D1117] text-white shadow-md">
+      <div className="flex items-center justify-between h-16 px-6 lg:px-12">
+        {/* Logo */}
+        <a href="/" className="flex items-center h-full">
+          <img
+            src={name}
+            alt="Logo"
+            className="h-10 object-contain cursor-pointer hover:scale-105 transition"
+          />
         </a>
-        <div className="items-center justify-around hidden w-1/3 lg:flex">
-          <a href="#services">
-            <h1 className="text-xs active uppercase transition duration-500 ease-in-out cursor-pointer border-b-[1px] border-transparent hover:border-black hover:border-b-[1px]">
-              services
-            </h1>
-          </a>
-          <h1 className="text-xs uppercase transition duration-500 ease-in-out cursor-pointer border-b-[1px] border-transparent hover:border-black hover:border-b-[1px]">
-            works
-          </h1>
-          <h1 className="text-xs uppercase transition duration-500 ease-in-out cursor-pointer border-b-[1px] border-transparent hover:border-black hover:border-b-[1px]">
-            experience
-          </h1>
-          <h1 className="text-xs uppercase transition duration-500 ease-in-out cursor-pointer border-b-[1px] border-transparent hover:border-black hover:border-b-[1px]">
-            blogs
-          </h1>
-          <h1 className="text-xs uppercase transition duration-500 ease-in-out cursor-pointer border-b-[1px] border-transparent hover:border-black hover:border-b-[1px]">
-            contact me
-          </h1>
-        </div>
-        <div className="flex justify-end w-1/3 ">
-          <h1 className="hidden text-xs cursor-pointer lg:block hover:scale-105">
+
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex items-center space-x-6">
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              className="text-sm uppercase tracking-wide text-gray-300 hover:text-orange-400 transition border-b-2 border-transparent hover:border-orange-500"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Right Side */}
+        <div className="flex items-center space-x-4">
+          <a
+            href="tel:+94713704691"
+            className="hidden lg:block text-sm text-gray-300 hover:text-white transition"
+          >
             (+94) 71 370 4691
-          </h1>
-          <div className="lg:hidden">
-            <MenuIcon className="scale-125" />
+          </a>
+          <div className="lg:hidden cursor-pointer text-gray-300">
+            <MenuIcon fontSize="medium" />
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -8,123 +8,107 @@ import fiverrlogo from "../../assets/img/fiverrlogo.png";
 import git from "../../assets/img/git.png";
 
 function Contact() {
+  const contacts = [
+    {
+      icon: phone,
+      text: "+94 71 370 4691",
+      link: "tel:+94713704691",
+    },
+
+    {
+      icon: linkedin,
+      text: "LinkedIn",
+      link: "https://www.linkedin.com/in/vishnaka-dasanayaka-358a16211/",
+    },
+    {
+      icon: git,
+      text: "GitHub",
+      link: "https://github.com/vishnaka-dasanayaka",
+    },
+    {
+      icon: fiverrlogo,
+      text: "Fiverr",
+      link: "https://www.fiverr.com/sachinvishnaka",
+    },
+    {
+      icon: hackerrank,
+      text: "HackerRank",
+      link: "https://www.hackerrank.com/vishnaka-dasanayaka",
+    },
+    {
+      icon: leet,
+      text: "LeetCode",
+      link: "https://leetcode.com/vishnaka-dasanayaka",
+    },
+    {
+      icon: gmail,
+      text: "vishnakadasanayaka@gmail.com",
+      link: "mailto:vishnakadasanayaka@gmail.com",
+    },
+  ];
+
   return (
-    <div id="contact" className="w-screen h-auto py-10 bg-white">
-      <div className="mx-5 lg:mx-32">
-        <h1 className="text-3xl font-extrabold capitalize ">get in touch</h1>
-        <div className="flex flex-col items-start justify-between mt-10 lg:flex-row">
-          <div className="flex flex-col items-start justify-start mr-3">
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={phone}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">+94 71 370 4691</h1>
-            </div>
+    <section
+      id="contact"
+      className="w-full min-h-screen bg-[#0D1117] text-white px-6 lg:px-32 py-20"
+    >
+      <h1 className="text-4xl font-extrabold text-white mb-16 text-center">
+        Get in Touch
+      </h1>
 
-            <div className="flex items-center justify-start mb-5">
+      <div className="grid grid-cols-1  gap-12">
+        {/* Left: Contact Icons */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {contacts.map((c, index) => (
+            <a
+              key={index}
+              href={c.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center space-x-4 p-4 bg-[#161B22] hover:bg-[#1F2937] rounded-lg transition `}
+            >
               <img
-                src={gmail}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
+                src={c.icon}
+                alt={c.text}
+                className="w-10 h-10 object-cover rounded-full"
               />
-              <h1 className="ml-3 font-extrabold ">
-                vishnakadasanayaka@gmail.com
-              </h1>
-            </div>
+              <span className="text-sm font-semibold text-gray-300 hover:text-white transition">
+                {c.text}
+              </span>
+            </a>
+          ))}
+        </div>
 
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={linkedin}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">
-                vishnaka-dasanayaka lnkd in
-              </h1>
-            </div>
-
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={fiverrlogo}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">vishnaka-dasanayaka</h1>
-            </div>
-          </div>
-          <div className="flex flex-col items-start justify-start mr-3">
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={hackerrank}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">vishnaka-dasanayaka hc</h1>
-            </div>
-
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={leet}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">
-                vishnaka-dasanayaka leet{" "}
-              </h1>
-            </div>
-
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={git}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">vishnaka-dasanayaka</h1>
-            </div>
-
-            <div className="flex items-center justify-start mb-5">
-              <img
-                src={fe}
-                className="object-cover w-10 h-10 rounded-full"
-                alt=""
-              />
-              <h1 className="ml-3 font-extrabold ">
-                vishnaka-dasanayaka fiverr
-              </h1>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center justify-between w-full mb-10 lg:mb-0 lg:w-1/3">
-            <h1 className="text-lg font-extrabold text-black ">
-              Send a Message
-            </h1>
-
+        {/* Right: Contact Form */}
+        <div className="bg-[#161B22] rounded-xl p-6 shadow-md">
+          <h2 className="text-xl font-semibold mb-6">Send a Message</h2>
+          <form className="space-y-4">
             <input
               type="text"
-              placeholder="Full name"
-              className="w-full p-1 mt-3 border-b-2 border-black outline-none"
+              placeholder="Full Name"
+              className="w-full px-4 py-2 bg-transparent border-b border-gray-600 text-white outline-none focus:border-orange-500"
             />
             <input
-              type="text"
+              type="email"
               placeholder="Email"
-              className="w-full p-1 mt-3 border-b-2 border-black outline-none"
+              className="w-full px-4 py-2 bg-transparent border-b border-gray-600 text-white outline-none focus:border-orange-500"
             />
-            <input
-              type="text"
-              placeholder="Message"
-              className="w-full p-1 mt-3 border-b-2 border-black outline-none"
-            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              className="w-full px-4 py-2 bg-transparent border-b border-gray-600 text-white outline-none focus:border-orange-500 resize-none"
+            ></textarea>
 
-            <button className="w-full py-2 mt-5 text-white capitalize bg-blue-400 hover:bg-blue-600">
-              {" "}
-              send
+            <button
+              type="submit"
+              className="w-full py-2 text-white bg-orange-500 hover:bg-orange-600 rounded-md transition"
+            >
+              Send Message
             </button>
-          </div>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

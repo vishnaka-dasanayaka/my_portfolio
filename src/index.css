@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+  border-bottom: solid 2px black;
+}
 
-.active{
-border-bottom: solid 2px black;}
+* {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+}
